@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "my-store-api"
+version = "0.1.0"
+description = "API de loja desenvolvida com TDD - Projeto personalizado do aluno"
+authors = ["Aluno DIO <aluno@email.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.1"
+uvicorn = "^0.24.0"
+pydantic = "^2.5.1"
+pydantic-settings = "^2.1.0"
+motor = "^3.3.1"
+pytest = "^7.4.3"
+pytest-asyncio = "^0.21.1"
+httpx = "^0.25.1"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+addopts = [
+  "--strict-config",
+  "--strict-markers",
+]
+xfail_strict = true
+junit_family = "xunit2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
