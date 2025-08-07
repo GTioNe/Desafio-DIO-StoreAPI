@@ -182,7 +182,7 @@ curl -X PATCH "http://localhost:8000/products/{product_id}" \
 curl -X DELETE "http://localhost:8000/products/{product_id}"
 ```
 
-## 🎨 Modificações Implementadas pelo Aluno
+## 🎨 Modificações Implementadas
 
 Este projeto implementa as seguintes melhorias em relação ao desafio original:
 
